@@ -1,26 +1,43 @@
-# 🚀 .NET 8 ile Modern Mikroservis Mimarisi – Eğitim Projesi
+# 🚀 .NET 8 ile Modern Mikroservis Mimarisi  
+### (Eğitim Amaçlı Birebir Uygulama – Fatih Çakıroğlu)
 
-Bu repository, **.NET 8** kullanılarak geliştirilen ve bir eğitim süreci boyunca adım adım inşa edilen **Modern Mikroservis Mimarisi** örneğini içermektedir.
+Bu repository, **Fatih Çakıroğlu** tarafından hazırlanan  
+**“.NET ile Modern Mikroservis Mimarisi”** eğitim seti **birebir takip edilerek** geliştirilmiştir.
 
-Proje, Udemy benzeri bir **Online Kurs Platformu** senaryosu üzerinden ilerlemekte olup, mikroservis mimarisinin gerçek hayatta nasıl uygulandığını öğrenmeyi hedefler.
+Amaç; mimari kararları, kullanılan teknolojileri ve uygulama detaylarını **derinlemesine öğrenmek** ve mikroservis mimarisini gerçek bir proje üzerinden deneyimlemektir.
 
-> 🎯 Amaç: Mikroservis mimarisini teoriden pratiğe taşıyarak, modern backend geliştirme yaklaşımlarını birebir uygulamak.
+> ⚠️ Bu proje **tamamen eğitim ve öğrenme amaçlıdır**.  
+> Kod yapısı, servis kurgusu ve mimari yaklaşım eğitim seti ile **birebir aynıdır**.
 
 ---
 
-## 📚 Eğitim Kapsamında Öğreneceklerim
+## 🎯 Projenin Amacı
 
-- Mikroservis mimarisinin temel prensipleri ve avantajları
-- Mikroservisler arası:
-  - **Senkron iletişim (HTTP / REST)**
-  - **Asenkron iletişim (RabbitMQ – Event Driven)**
-- **OAuth 2.0 & OpenID Connect** ile kimlik doğrulama
-- **Keycloak** ile Access Token / Refresh Token yönetimi
-- **Eventual Consistency** yaklaşımı
-- Docker & Docker Compose ile container tabanlı mimari
-- API Gateway kullanımı (**YARP**)
-- Polyglot Persistence (Birden fazla veritabanı kullanımı)
-- Clean Architecture & CQRS Pattern
+- Mikroservis mimarisini teoriden pratiğe geçirmek
+- Dağıtık sistemlerde:
+  - Senkron
+  - Asenkron
+  iletişim modellerini uygulamak
+- Modern .NET ekosistemini gerçek bir projede kullanmak
+- Clean Architecture ve CQRS gibi ileri seviye mimari desenleri öğrenmek
+
+---
+
+## 📚 Eğitimde Ele Alınan Konular
+
+- Mikroservis mimarisi temel prensipleri
+- Servisler arası iletişim:
+  - HTTP / REST
+  - RabbitMQ (Event Driven)
+- OAuth 2.0 & OpenID Connect
+- Keycloak ile IdentityServer kurulumu
+- Access Token / Refresh Token yönetimi
+- Eventual Consistency
+- Docker & Docker Compose
+- API Gateway (YARP)
+- Clean Architecture
+- CQRS Pattern (MediatR)
+- Polyglot Persistence
 
 ---
 
@@ -36,58 +53,26 @@ Proje, Udemy benzeri bir **Online Kurs Platformu** senaryosu üzerinden ilerleme
 | MassTransit | Asenkron iletişim |
 | YARP | API Gateway |
 | Keycloak | IdentityServer |
-| MongoDB | Catalog servisi |
-| Redis | Basket servisi |
+| MongoDB | Catalog Microservice |
+| Redis | Basket Microservice |
 | PostgreSQL | Discount & Identity |
-| SQL Server | Order servisi |
+| SQL Server | Order Microservice |
 | MediatR | CQRS Pattern |
 
 ---
 
-## 🧩 Geliştirilen Mikroservisler
+## 🧩 Mikroservisler
 
-### 📦 Catalog Microservice
-- Kurs bilgileri yönetimi
-- MongoDB kullanımı
-- One-to-Many & One-to-One ilişkiler
-
-### 🛒 Basket Microservice
-- Kullanıcı sepet işlemleri
-- Redis ile geçici veri yönetimi
-
-### 🎟 Discount Microservice
-- Kullanıcı indirim kuponları
-- PostgreSQL veritabanı
-
-### 📑 Order Microservice
-- Sipariş süreçleri
-- Clean Architecture & CQRS
-- SQL Server
-- MediatR
-
-### 💳 Fake Payment Microservice
-- Ödeme sürecinin simülasyonu
-
-### 🖼 File Microservice
-- Kurs görsellerinin yönetimi
-
-### 🔐 Identity Microservice (Keycloak)
-- OAuth 2.0 / OpenID Connect
-- Access Token & Refresh Token
-- PostgreSQL
-
-### 🌐 API Gateway
-- Merkezi yönlendirme
-- YARP ile yapılandırma
-
-### 📬 Message Broker
-- RabbitMQ
-- Event-driven mimari
-- MassTransit
-
-### 🖥 ASP.NET Core Razor Pages UI
-- Kullanıcı arayüzü
-- Mikroservislerle entegrasyon
+- Catalog Microservice
+- Basket Microservice
+- Discount Microservice
+- Order Microservice
+- Fake Payment Microservice
+- File Microservice
+- Identity Microservice (Keycloak)
+- API Gateway (YARP)
+- Message Broker (RabbitMQ)
+- ASP.NET Core Razor Pages UI
 
 ---
 
