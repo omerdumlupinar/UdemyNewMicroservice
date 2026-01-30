@@ -14,6 +14,8 @@ namespace UdemyNewMicroservice.Catalog.Api.Features.Courses
         public Guid CategoruId { get; set; }
         public Category Category { get; set; } = default!;
 
+        public Feature Feature { get; set; } = default!;
+
         public Guid UserId { get; set; } = default!;
     }
 }
