@@ -28,7 +28,7 @@ namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.Create
 
             await context.SaveChangesAsync();
 
-            return ServiceResult<CreateCategoryResponse>.SuccessAsCreated(new CreateCategoryResponse(category.Id.ToString()), "<empty>");
+            return ServiceResult<CreateCategoryResponse>.SuccessAsCreated(new CreateCategoryResponse(category.Id), "<empty>");
         }
     }
 }
