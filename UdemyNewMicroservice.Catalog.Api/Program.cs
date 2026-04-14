@@ -1,5 +1,7 @@
-using Microsoft.Extensions.Options;
-using MongoDB.Driver;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using UdemyNewMicroservice.Catalog.Api.Features.Categories;
+using UdemyNewMicroservice.Catalog.Api.Features.Categories.Create;
 using UdemyNewMicroservice.Catalog.Api.Options;
 using UdemyNewMicroservice.Catalog.Api.Repositories;
 
@@ -11,9 +13,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddOptionsExt();
 builder.Services.AddDatabaseServiceExt();
 
-
-
 var app = builder.Build();
+
+app.AddCategoryGroupEndpointExt();
 
 if (app.Environment.IsDevelopment())
 {
