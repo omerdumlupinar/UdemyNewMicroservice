@@ -134,7 +134,7 @@ namespace UdemyNewMicroservice.Shared
             };
         }
 
-        public new static ServiceResult<T> SuccessAsOk(T data, string url)
+        public new static ServiceResult<T> SuccessAsCreated(T data, string url)
         {
             return new ServiceResult<T>
             {
